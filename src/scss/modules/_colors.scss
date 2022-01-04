@@ -1,0 +1,24 @@
+/**
+ * This file contains all the color variables for the site
+ */
+
+// Define the colors
+$black:     #000; //#212121;
+$white:     #fff;  //fefefe;
+$gray:      #E1E2E1;
+$lightgray: #F5F5F6;
+$red:       #E53935;
+$blue:      #01579b;
+$darkblue:  #002f6c;
+$lightblue: #4f83cc;
+
+// Define how the colors are used
+$body-text-color: $black;
+$body-link-color: $blue;
+$header-background-color: $lightblue;
+$header-text-color: $white;
+$footer-background-color: $lightblue;
+$footer-text-color: $black;
+// Changes the text highlighting color
+$selection-foreground: $white; 
+$selection-background: $blue;

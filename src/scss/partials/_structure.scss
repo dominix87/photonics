@@ -1,0 +1,68 @@
+/**
+ * This file contains the structure of the site. These styles build the basic
+ * wire-frame of the site. Specific components such as slide-shows, accordions,
+ * etc. should have their own partial.
+ */
+
+* {
+  color: $black;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+  color: $body-link-color;
+}
+
+body {
+  .wrapper {
+    @include make-row();
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden;
+  }
+
+  > header {
+    @include make-container();
+    background-color: $header-background-color;
+    padding-top: $desktop-padding;
+
+    h1 {
+      color: $header-text-color;
+      font-size: $desktop-base-font-size * 3;
+      margin: ($desktop-padding * 2) 0 ($desktop-padding * 2);
+
+      @include breakpoint('medium') {
+        font-size: $desktop-base-font-size * 4;
+      }
+    }
+  }
+
+  > main {
+    @include make-container();
+
+    h1 {
+      font-size: $desktop-base-font-size * 2;
+    }
+
+    p {
+      line-height: $desktop-base-font-size * 2;
+    }
+
+    article {
+      margin: $desktop-padding * 2 0; 
+    }
+  }
+
+  > footer {
+    @include make-container();
+    @include stretched-footer($footer-background-color);
+
+    background-color: $footer-background-color;
+
+    p {
+      color: $footer-text-color;
+      padding-top: $desktop-padding;
+    }
+  }
+}
