@@ -6,7 +6,8 @@ $mainMenu = '{
       "title": "Home",
       "link": "/",
       "rel": "noopener"
-    }, {
+    },
+    {
       "title": "Wiki",
       "link": "https://github.com/sleepymustache/basic/wiki",
       "rel": "noopener",
@@ -34,7 +35,8 @@ $mainMenu = '{
           "rel": "noopener"
         }
       ]
-    }, {
+    },
+    {
       "title": "Nav 3",
       "link": "/nav3/"
     }

@@ -5,3 +5,19 @@
 @import 'grid';
 @import 'fixes';
 @import 'fonts';
+
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  color:#ffffff;
+  background-color:#99c873;
+  height: 38px;
+  line-height: 38px;
+  text-decoration: none;
+  padding: 0 15px;
+  border-radius: 3px;
+  border: none;
+  &:hover{
+    background-color:#99c999;
+  }
+}

@@ -10,3 +10,129 @@ $desktop-base-font-size: 12px;
 @import 'partials/structure';
 @import 'partials/forms';
 @import 'partials/navigation';
+
+
+
+
+.sliderSection{
+  background-color:#ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .wrapper{
+    display: block;
+  }
+  .sliderBlock{
+    .sliderItem{
+      display: flex;
+      align-items: center;
+      .textWrap{
+        flex: 0 0 50%;
+      }
+      .imgWrap{
+        flex: 0 0 50%;
+      }
+    }
+  }
+}
+.mainContentSection{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color:#f3fcff;
+  .wrapper{
+    justify-content: space-between;
+    .asideBar{
+      h2.title{
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color:#333333;
+      }
+      .categoryList{
+        .menu{
+          display: block;
+          li{
+            padding: 0;
+            border: none;
+            line-height: 25px;
+            a{
+              font-size: 14px;
+              color:#325f70;
+              text-decoration: none;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+    .contentWrap{
+      flex: 0 0 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      .contentItem{
+        text-decoration: none;
+        flex: 0 0 calc((100% / 3) - 20px);
+        margin-bottom: 40px;
+        .imgWrap{
+          background-color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          height: 300px;
+          margin-bottom: 20px;
+          .priceEl{
+            position: absolute;
+            bottom: 20px;
+            left: -20px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #d52b2b;
+            color:#ffffff;
+            text-align:center;
+            font-size: 12px;
+            padding-top: 10px;
+            &:first-line{
+              font-size: 14px;
+            }
+          }
+          .shippingEl{
+            position: absolute;
+            bottom: 20px;
+            left: 25px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #ff9000;
+            color:#ffffff;
+            text-align: center;
+            font-size: 9px;
+            padding-top: 10px;
+            text-transform: uppercase;
+            &:first-line{
+              font-size: 14px;
+            }
+          }
+        }
+        .textWrap{
+          display: flex;
+          justify-content: space-between;
+
+        }
+      }
+    }
+    .btnWrap{
+      margin-left: auto;
+      flex: 0 0 80%;
+      text-align: center;
+
+    }
+  }
+}
+.newItemsSection{
+
+}

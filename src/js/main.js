@@ -2,6 +2,9 @@
 
 import Sleepy from './classes/sleepy.class.js';
 import MainNav from './classes/main-nav.class';
+// import $ from 'jquery';
+// import slick from "slick-slider";
+
 
 const SM = new Sleepy();
 

@@ -26,17 +26,107 @@ body {
     @include make-container();
     background-color: $header-background-color;
     padding-top: $desktop-padding;
+    padding-bottom: $desktop-padding;
+    .wrapper{
+      align-items: center;
+      .rightSide{
+        margin-left: auto;
+        align-items: center;
+        .textBlock{
+          .topLine{
 
-    h1 {
-      color: $header-text-color;
-      font-size: $desktop-base-font-size * 3;
-      margin: ($desktop-padding * 2) 0 ($desktop-padding * 2);
-
-      @include breakpoint('medium') {
-        font-size: $desktop-base-font-size * 4;
+          }
+          .bottomLine{
+            .menu{
+              li{
+                border-left: none;
+                padding-left: 3px;
+                padding-right: 3px;
+              }
+            }
+          }
+        }
+        .inputWrapper{
+          input{
+            display: block;
+            width: 100%;
+          }
+        }
       }
     }
   }
+
+  .mainNavigation{
+    background-color:#000a52;
+    .wrapper{
+      overflow: unset;
+    }
+    .menu{
+      width: 100%;
+      list-style: none;
+      justify-content: space-between;
+      position:relative;
+      .has-children{
+        padding: 15px 0;
+        border-left: none!important;
+        a{
+          color:#ffffff!important;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        .submenu{
+          opacity: 0;
+          visibility: hidden;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          position: absolute;
+          z-index: 2;
+          top: 100%;
+          left: 0;
+          list-style: none;
+          padding-left: 0;
+          transition: all .5s ease-in-out;
+          li{
+            padding: 15px 0;
+            a{
+              padding: 15px 0;
+              color:#325f70!important;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+            +li{
+
+              border-left: none;
+            }
+          }
+          &:before{
+            content: '';
+            width: calc(100vw - 17px);
+            height: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffffff;
+            border-bottom: 1px solid #6397aa;
+            position:absolute;
+            z-index: -1;
+          }
+        }
+        &:hover{
+          .submenu {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+
+
+
 
   > main {
     @include make-container();
@@ -52,6 +142,8 @@ body {
     article {
       margin: $desktop-padding * 2 0; 
     }
+
+
   }
 
   > footer {

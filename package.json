@@ -41,7 +41,9 @@
     "axios-oauth-client": "^1.4.3",
     "axios-token-interceptor": "^0.2.0",
     "babel-runtime": "^6.26.0",
-    "del": "^5.0.0"
+    "del": "^5.0.0",
+    "jquery": "latest",
+    "slick-slider": "^1.8.2"
   },
   "browserslist": [
     "defaults",
