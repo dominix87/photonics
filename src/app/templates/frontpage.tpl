@@ -8,6 +8,8 @@
 	{{ #include sliderSection }}
 	{{ #include mainContent }}
 	{{ #include newItems }}
+	{{ #include advSection }}
+	{{ #include partnersSection }}
 </main>
 {{ #include footer }}
 </body>

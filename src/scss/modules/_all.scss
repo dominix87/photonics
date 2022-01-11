@@ -11,6 +11,7 @@
   display: inline-block;
   color:#ffffff;
   background-color:#99c873;
+  font-size: 14px;
   height: 38px;
   line-height: 38px;
   text-decoration: none;
@@ -19,5 +20,15 @@
   border: none;
   &:hover{
     background-color:#99c999;
+  }
+  &.transparent{
+    border: 1px solid #99c873;
+    background-color: transparent;
+    color:#99c873;
+    &:hover{
+      border-color:#99c999;
+      background-color:#99c999;
+      color: #ffffff;
+    }
   }
 }

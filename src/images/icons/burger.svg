@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="menuBurger" viewBox="0 0 13 9">
+    <rect width="13" height="1" fill="inherit"/>
+    <rect y="8" width="13" height="1" fill="inherit"/>
+    <rect x="3" y="4" width="7" height="1" fill="inherit"/>
+</svg>

@@ -1,7 +1,7 @@
 $grid-breakpoint-xsmall: 0px !default;
 $grid-breakpoint-small:  576px !default;
-$grid-breakpoint-medium: 769px !default;
-$grid-breakpoint-large:  992px !default;
+$grid-breakpoint-medium: 767px !default;
+$grid-breakpoint-large:  991px !default;
 $grid-breakpoint-xlarge: 1200px !default;
 
 $grid-gutters-xsmall: 30px !default;
@@ -37,7 +37,7 @@ $grid-columns-xlarge: 12 !default;
     $breakpoint: $grid-breakpoint-xlarge;
   }
 
-  @media (min-width: $breakpoint) {
+  @media (max-width: $breakpoint) {
     @content;
   }
 }
