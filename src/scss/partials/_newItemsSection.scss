@@ -1,0 +1,39 @@
+.newItemsSection{
+  padding-top: 26px;
+  background-image: url(../images/BG.jpg);
+  padding-bottom : 30px;
+  .wrapper{
+    overflow: unset;
+  }
+  h2.title{
+    font-size: 22px;
+    flex: 0 0 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .contentWrap{
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+    .contentItem{
+      text-decoration: none;
+      flex: 0 0 calc((100% / 4) - 20px);
+      @include breakpoint('large'){
+        flex: 0 0 calc((100% / 2) - 15px);
+        margin-bottom: 20px;
+      }
+      @include breakpoint('small'){
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    }
+    @include breakpoint('large'){
+      flex-wrap: wrap;
+    }
+    @include breakpoint('small'){
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.mainContentSection{
+  padding-top: 25px;
+  padding-bottom: 30px;
+  background-color:#f3fcff;
+
+  .wrapper{
+    overflow: unset;
+    justify-content: space-between;
+    .asideBar{
+      flex: 0 0 12%;
+      h2.title{
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: 22px;
+        color:#333333;
+      }
+      .categoryList{
+        .menu{
+          display: block;
+          li{
+            padding: 0;
+            border: none;
+            line-height: 26px;
+            margin-left: -5px;
+            a{
+              padding: 5px;
+              display: block;
+              font-size: 14px;
+              color:#325f70;
+              text-decoration: none;
+              &:hover{
+                background-color:#6397aa;
+                color:#ffffff;
+              }
+            }
+          }
+        }
+      }
+      @include breakpoint('small'){
+        margin-bottom: 30px;
+      }
+    }
+    .contentWrap{
+      padding-top: 10px;
+      flex: 0 0 74%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      .contentItem{
+        text-decoration: none;
+        flex: 0 0 calc((100% / 3) - 20px);
+        margin-bottom: 22px;
+        @include breakpoint('large'){
+          flex: 0 0 calc((100% / 2) - 15px);
+        }
+        @include breakpoint('small'){
+          display: block;
+          max-width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 30px;
+        }
+      }
+      @include breakpoint('small'){
+        display: block;
+        margin-bottom: 30px;
+      }
+    }
+    .btnWrap{
+      margin-left: auto;
+      flex: 0 0 74%;
+      text-align: center;
+
+    }
+    @include breakpoint('small'){
+      display: block;
+    }
+  }
+}

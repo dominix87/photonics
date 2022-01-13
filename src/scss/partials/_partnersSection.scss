@@ -1,0 +1,22 @@
+.partnersSection{
+  padding-top: 30px;
+  background-image: url(../images/BG.jpg);
+  padding-bottom: 30px;
+  .wrapper{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .imgWrap{
+      @include breakpoint('medium'){
+        flex: 0 0 calc(100% / 2);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      @include breakpoint('small'){
+        flex: 0 0 100%;
+      }
+    }
+    &:after{
+      display: none;
+    }
+  }
+}
